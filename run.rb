@@ -14,6 +14,7 @@ packet_loss   = 0.0
 losing_streak = 0
 worst_streak  = 0
 
+puts "\nTrial: #{ARGV[0]}\n" if ARGV[0]
 puts "\nStarted #{started = Time.now}\n".bold
 
 def printer(packet_status, min, max, avg, packet_loss, worst_streak, started)
